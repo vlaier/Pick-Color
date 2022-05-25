@@ -41,7 +41,7 @@ h1 {
   font-size: var(--fs-h1);
 }
 .container {
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 .flex-container {
@@ -112,6 +112,13 @@ h1 {
   .hamburger {
     display: none;
   }
+  .navbar {
+    height: 20vh;
+  }
+}
+.hamburger.active + .menu {
+  visibility: visible;
+  clip-path: circle(1400px at 90% -10%);
 }
 .menu {
   position: fixed;
@@ -122,25 +129,35 @@ h1 {
   width: 100vw;
   background-color: var(--clr-active);
   z-index: 0;
-  transition: 300ms;
+  transition: var(--m-a);
+  clip-path: circle(100px at 90% -10%);
 }
-.hamburger.active + .menu {
-  visibility: visible;
+.menu {
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  gap: 2rem;
+  padding-top: 30%;
 }
-
+.menu li {
+  list-style: none;
+  padding: 0;
+  font-size: 25px;
+}
 /* Pick Color Section */
 .sign {
-  border: 1px solid salmon;
   flex-grow: 1;
-  flex-basis: 1;
+  flex-basis: 0;
+  justify-self: center;
 }
 .sign h1 {
   font-size: 8rem;
+  text-align: center;
 }
 .color-picker {
   flex-grow: 1;
-  flex-basis: 1;
-  border: 1px solid blue;
+  flex-basis: 0;
   align-items: center;
   justify-content: space-around;
 }
@@ -178,6 +195,7 @@ h1 {
 
 /* Color swatch */
 .color-swatch {
+  transition: var(--clr-transition);
   padding: 5px 0px;
   border: 5px dotted var(--clr-active);
   width: 30%;
@@ -185,4 +203,7 @@ h1 {
 }
 .circle-border {
   fill: var(--clr-font);
+}
+.option {
+  cursor: pointer;
 }
