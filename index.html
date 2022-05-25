@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pick Your Color</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="hamburger">
+            <button class="hamburger-icon">
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </button>
+          </div>
+
+          <div class="menu"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="pick-color" id="pick-color">
+        <div class="container flex-container">
+          <div class="sign">
+            <h1>Pick <br />Your<br /><span class="accents">Color</span></h1>
+          </div>
+          <div class="color-picker flex-container column">
+            <div class="arrows">
+              <svg
+                width="200"
+                height="300"
+                viewBox="0 0 70 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="triangles">
+                  <path
+                    id="front"
+                    d="M69.1271 29.2441C69.5876 29.6428 69.5876 30.3572 69.1271 30.7559L41.6547 54.5478C41.007 55.1087 40 54.6486 40 53.7919V6.20814C40 5.35139 41.007 4.89133 41.6547 5.45221L69.1271 29.2441Z"
+                    fill="#D9D9D9"
+                  />
+                  <path
+                    id="mid"
+                    d="M49.1271 29.2441C49.5876 29.6428 49.5876 30.3572 49.1271 30.7559L21.6547 54.5478C21.007 55.1087 20 54.6486 20 53.7919L20 6.20814C20 5.35139 21.007 4.89133 21.6547 5.45221L49.1271 29.2441Z"
+                    fill="#D9D9D9"
+                    fill-opacity="0.8"
+                  />
+                  <path
+                    id="back"
+                    d="M20 29L20 38.0459C20 38.3345 19.8754 38.6089 19.6581 38.7988L1.65809 54.5315C1.0114 55.0968 0 54.6375 0 53.7786L0 6.26298C0 5.39746 1.02493 4.94067 1.66857 5.51933L19.6686 21.702C19.8795 21.8917 20 22.162 20 22.4457V29Z"
+                    fill="#D9D9D9"
+                    fill-opacity="0.6"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="color-swatch flex-container">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 11 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="colors"
+              >
+                <g>
+                  <circle
+                    class="circle-border"
+                    cx="5.5"
+                    cy="5.5"
+                    r="5.5"
+                    fill="#D9D9D9"
+                  />
+                  <path
+                    id="option-1"
+                    d="M10 5.5C10 7.98528 7.98528 10 5.5 10C3.01472 10 1 7.98528 1 5.5C1 3.01472 3.01472 1 5.5 1C7.98528 1 10 3.01472 10 5.5Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 11 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="colors"
+              >
+                <g>
+                  <circle
+                    class="circle-border"
+                    cx="5.5"
+                    cy="5.5"
+                    r="5.5"
+                    fill="#D9D9D9"
+                  />
+                  <path
+                    id="option-2"
+                    d="M10 5.5C10 7.98528 7.98528 10 5.5 10C3.01472 10 1 7.98528 1 5.5C1 3.01472 3.01472 1 5.5 1C7.98528 1 10 3.01472 10 5.5Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 11 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="colors"
+              >
+                <g>
+                  <circle
+                    class="circle-border"
+                    cx="5.5"
+                    cy="5.5"
+                    r="5.5"
+                    fill="#D9D9D9"
+                  />
+                  <path
+                    id="option-3"
+                    d="M10 5.5C10 7.98528 7.98528 10 5.5 10C3.01472 10 1 7.98528 1 5.5C1 3.01472 3.01472 1 5.5 1C7.98528 1 10 3.01472 10 5.5Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
