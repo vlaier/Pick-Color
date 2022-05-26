@@ -20,50 +20,52 @@
             </button>
           </div>
 
-          <ul class="menu flex-container column">
-            <li>Color</li>
-            <li>Lightning</li>
+          <ul class="menu flex-container">
+            <li><a href="#pick-color">Color</a></li>
+            <li><a href="#lightning">Lightning</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <main>
-      <section class="pick-color" id="pick-color">
-        <div class="container flex-container">
-          <div class="sign">
-            <h1>Pick <br />Your<br /><span class="accents">Color</span></h1>
+
+    <section class="pick-color mb-10" id="pick-color">
+      <div class="container flex-container">
+        <div class="sign">
+          <h1>Pick <br />Your<br /><span class="accents">Color</span></h1>
+        </div>
+        <div class="color-picker flex-container column">
+          <div class="arrows">
+            <svg
+              width="300"
+              height="450"
+              viewBox="0 0 70 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="triangles">
+                <path
+                  id="front"
+                  d="M69.1271 29.2441C69.5876 29.6428 69.5876 30.3572 69.1271 30.7559L41.6547 54.5478C41.007 55.1087 40 54.6486 40 53.7919V6.20814C40 5.35139 41.007 4.89133 41.6547 5.45221L69.1271 29.2441Z"
+                  fill="#D9D9D9"
+                />
+                <path
+                  id="mid"
+                  d="M49.1271 29.2441C49.5876 29.6428 49.5876 30.3572 49.1271 30.7559L21.6547 54.5478C21.007 55.1087 20 54.6486 20 53.7919L20 6.20814C20 5.35139 21.007 4.89133 21.6547 5.45221L49.1271 29.2441Z"
+                  fill="#D9D9D9"
+                  fill-opacity="0.8"
+                />
+                <path
+                  id="back"
+                  d="M20 29L20 38.0459C20 38.3345 19.8754 38.6089 19.6581 38.7988L1.65809 54.5315C1.0114 55.0968 0 54.6375 0 53.7786L0 6.26298C0 5.39746 1.02493 4.94067 1.66857 5.51933L19.6686 21.702C19.8795 21.8917 20 22.162 20 22.4457V29Z"
+                  fill="#D9D9D9"
+                  fill-opacity="0.6"
+                />
+              </g>
+            </svg>
           </div>
-          <div class="color-picker flex-container column">
-            <div class="arrows">
-              <svg
-                width="300"
-                height="450"
-                viewBox="0 0 70 60"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="triangles">
-                  <path
-                    id="front"
-                    d="M69.1271 29.2441C69.5876 29.6428 69.5876 30.3572 69.1271 30.7559L41.6547 54.5478C41.007 55.1087 40 54.6486 40 53.7919V6.20814C40 5.35139 41.007 4.89133 41.6547 5.45221L69.1271 29.2441Z"
-                    fill="#D9D9D9"
-                  />
-                  <path
-                    id="mid"
-                    d="M49.1271 29.2441C49.5876 29.6428 49.5876 30.3572 49.1271 30.7559L21.6547 54.5478C21.007 55.1087 20 54.6486 20 53.7919L20 6.20814C20 5.35139 21.007 4.89133 21.6547 5.45221L49.1271 29.2441Z"
-                    fill="#D9D9D9"
-                    fill-opacity="0.8"
-                  />
-                  <path
-                    id="back"
-                    d="M20 29L20 38.0459C20 38.3345 19.8754 38.6089 19.6581 38.7988L1.65809 54.5315C1.0114 55.0968 0 54.6375 0 53.7786L0 6.26298C0 5.39746 1.02493 4.94067 1.66857 5.51933L19.6686 21.702C19.8795 21.8917 20 22.162 20 22.4457V29Z"
-                    fill="#D9D9D9"
-                    fill-opacity="0.6"
-                  />
-                </g>
-              </svg>
-            </div>
-            <div class="color-swatch flex-container">
+          <div class="color-swatch mb-10 flex-container column">
+            <h2 class="color-swatch-title">Pick your color:</h2>
+            <div class="color-dots">
               <svg
                 width="50"
                 height="50"
@@ -139,7 +141,63 @@
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+    <!-- Lightning -->
+    <section class="lightning container" id="lightning">
+      <div class="toggle-container flex-container column">
+        <h2>Have a good</h2>
+
+        <input
+          type="checkbox"
+          id="switch"
+          class="btn-toggle color-mode-switch"
+        />
+        <label for="switch"></label>
+        <h2 id="modeText" class="accents">Day!</h2>
+      </div>
+      <svg
+        id="moon"
+        width="150"
+        height="150"
+        viewBox="0 0 134 134"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g>
+          <path
+            id="Vector"
+            d="M66.9333 133.039C103.49 133.039 133.126 103.404 133.126 66.8467C133.126 30.2895 103.49 0.654083 66.9333 0.654083C30.3761 0.654083 0.740662 30.2895 0.740662 66.8467C0.740662 103.404 30.3761 133.039 66.9333 133.039Z"
+            fill="#E6E6E6"
+          />
+          <path
+            id="Vector_2"
+            d="M60.4225 28.8673C64.6176 28.8673 68.0184 25.4666 68.0184 21.2715C68.0184 17.0764 64.6176 13.6756 60.4225 13.6756C56.2274 13.6756 52.8266 17.0764 52.8266 21.2715C52.8266 25.4666 56.2274 28.8673 60.4225 28.8673Z"
+            fill="#CBCBCB"
+          />
+          <path
+            id="Vector_3"
+            d="M73.444 104.826C77.6391 104.826 81.0399 101.425 81.0399 97.2302C81.0399 93.0351 77.6391 89.6343 73.444 89.6343C69.2489 89.6343 65.8481 93.0351 65.8481 97.2302C65.8481 101.425 69.2489 104.826 73.444 104.826Z"
+            fill="#CBCBCB"
+          />
+          <path
+            id="Vector_4"
+            d="M102.742 60.3359C105.739 60.3359 108.168 57.9068 108.168 54.9103C108.168 51.9138 105.739 49.4847 102.742 49.4847C99.7459 49.4847 97.3168 51.9138 97.3168 54.9103C97.3168 57.9068 99.7459 60.3359 102.742 60.3359Z"
+            fill="#CBCBCB"
+          />
+          <path
+            id="Vector_5"
+            d="M40.8903 99.6343C50.479 99.6343 58.2523 91.8611 58.2523 82.2723C58.2523 72.6835 50.479 64.9103 40.8903 64.9103C31.3015 64.9103 23.5283 72.6835 23.5283 82.2723C23.5283 91.8611 31.3015 99.6343 40.8903 99.6343Z"
+            fill="#CBCBCB"
+          />
+        </g>
+      </svg>
+
+      <!-- <div class="lightning-svg">
+          <input type="checkbox" id="switch" /><label for="switch"
+            >Toggle</label
+          >
+        </div> -->
+    </section>
   </body>
 </html>
